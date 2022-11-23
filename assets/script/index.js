@@ -19,16 +19,6 @@ makeBtn.addEventListener('click', () => {
         count
     );
 
-    function createShape() {
-        let div = document.createElement("div");
-        div.classList.add('shape-item');
-        
-        arr.push(shapes.info); 
- 
-        if(shape.value == 'circle') {
-            div.style.borderRadius = '50%';
-        }
-
         switch(color.value) {
             case 'blue':
                 div.style.backgroundColor = '#0099ff';
@@ -53,7 +43,7 @@ makeBtn.addEventListener('click', () => {
             }
     }
 
-    createShape();
+
     console.log(arr);
     ++count;
 });
