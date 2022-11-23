@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="George Edgar">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"> 
-    <title>Shape factory</title>
-    <link rel="shortcut icon" href="assets/media/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style/index.css" media="all">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="George Edgar">
+        <meta name="description" content="My new cool project">
+        <meta name="keywords" content="HTML, CSS, SEO, web, web development">
+        <title>Shape factory</title>
+        <link rel="shortcut icon" href="assets/media/favicon.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="assets/style/index.css" media="screen">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap">
+        <script src="assets/script/index.js" type="module"></script>
+
     </head>
     <body>
         <main>
-            
-         </main>
+            <div class="container">
+                <h2>Shape factory</h2>
+                <div class="wraper">
+                    <form>
+                        <select id="shape">
+                            <option value="0">Select shape:</option>
+                            <option value="square">Square</option>
+                            <option value="circle">Circle</option>
+                        </select>
+                        <select id="color">
+                            <option value="0">Select color:</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="orange">Orange</option>
+                            <option value="pink">Pink</option>
+                            <option value="purple">Purple</option>
+                        </select>
+                        <input type="button" class = "make-btn" value="Create">
+                    </form>
+                    <div class="grid">
+        
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </div>            
+            </div>
+        </main>
     </body>
 </html>
