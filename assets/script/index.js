@@ -23,16 +23,10 @@ makeBtn.addEventListener('click', () => {
         let div = document.createElement("div");
         div.classList.add('shape-item');
         
-        arr.push(shapes.info);
-
-        
-        div.addEventListener('click', () => {
-            shapeInfo.innerHTML = `<p>${shapes.info}</p>`;
-        });        
-
-         
+        arr.push(shapes.info); 
+ 
         if(shape.value == 'circle') {
-            div.style.borderRadius = '50px';
+            div.style.borderRadius = '50%';
         }
 
         switch(color.value) {
