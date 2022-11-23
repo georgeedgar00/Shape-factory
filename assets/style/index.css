@@ -39,8 +39,8 @@ form{
 
 
 input[type="button"] {
-    background-color: var(--app-red);
-    color: var(--app-light-bg);
+    background-color: var(--app-light-bg);
+    color: var(--app-dark-bg);
     text-align: center;
     width: 120px;
     height: 46px;

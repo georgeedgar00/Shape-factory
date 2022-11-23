@@ -10,7 +10,7 @@ const makeBtn = document.querySelector('.make-btn');
 const gridInfo = document.querySelector('.grid');
 const shapeInfo = document.querySelector('.info');
 
-const shapeArray = [];
+const arr = [];
 let count = 0;
 makeBtn.addEventListener('click', () => {
     const shapes = new Shape (
@@ -23,7 +23,7 @@ makeBtn.addEventListener('click', () => {
         let div = document.createElement("div");
         div.classList.add('shape-item');
         
-        shapeArray.push(shapes.info);
+        arr.push(shapes.info);
 
         
         div.addEventListener('click', () => {
@@ -55,13 +55,12 @@ makeBtn.addEventListener('click', () => {
             case 'purple':
                 div.style.backgroundColor = '#9900ff'; 
                 gridInfo.append(div);
-            default:
-                div.style.backgroundColor = '#616188'; 
+                break;
             }
     }
 
     createShape();
-    console.log(shapeArray);
+    console.log(arr);
     ++count;
 });
 
